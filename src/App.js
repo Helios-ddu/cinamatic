@@ -3,8 +3,12 @@ import './App.css';
 import {Routes, Route} from 'react-router-dom';
 import Homepage from './pages/Homepage';
 import Moviepage from './pages/Moviepage';
+import axios from 'axios';
 import Playspage from './pages/Playspage';
 
+axios.defaults.baseURL = "https://api.themoviedb.org/3";
+axios.defaults.params = {};
+axios.defaults.params['api_key'] = "3fc1cbd793653959a0de6992bed8c849";
 function App() {
   return (
     <>
