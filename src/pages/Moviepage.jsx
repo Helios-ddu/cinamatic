@@ -6,6 +6,7 @@ import Slider from 'react-slick';
 import { FaCcVisa, FaCcApplePay } from "react-icons/fa";
 import PosterSlider from '../components/PosterSlider/PosterSlider';
 import axios from 'axios';
+import Cast from '../components/Cast/CastComponent';
 
 import MovieHero from '../components/MovieHero/MovieHeroCompanent';
 
@@ -174,7 +175,7 @@ const Moviepage = () => {
         </div>
 
         {/* Cast Slider */}
-        {/* <div className="my-8">
+        <div className="my-8">
           <h2 className="text-gray-800 font-bold text-2xl mb-4">
             Cast and Crew
           </h2>
@@ -187,7 +188,7 @@ const Moviepage = () => {
               />
             ))}
           </Slider>
-        </div> */}
+        </div>
 
         <div className="my-8">
           <hr />
