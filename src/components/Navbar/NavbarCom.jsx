@@ -1,5 +1,7 @@
 import React from 'react'
 import { BiChevronDown, BiMenu, BiSearch } from 'react-icons/bi'
+import {BsFillPersonFill} from 'react-icons/bs'
+import logon from './logo.png'
 
 function NavSm() {
   return (<>
@@ -34,7 +36,7 @@ function NavLg() {
     <div className='container flex mx-auto px-4 items-center justify-between'>
       <div className='flex items-center w-1/2 gap-3'>
         <div className='w-10 h-10'>
-          <img src="https://i.ibb.co/zPBYW3H/imgbin-bookmyshow-office-android-ticket-png.png" alt="logo" className='w-full h-full' />
+          <a href="/"><img src={logon} alt="logo" className='w-full h-full' /></a>
         </div>
         <div className='w-full flex items-center gap-3 bg-white px-3 py-1 rounded-md'>
           <BiSearch />
@@ -46,12 +48,12 @@ function NavLg() {
         <span className="text-gray-200 text-base flex items-center cursor-pointer hover:text-white">
           Nadiad <BiChevronDown />
         </span>
-        <button className="bg-red-600 text-white px-2 py-1 text-sm rounded">
-          Sign In
-        </button>
+        <a href="/about"><button className=" text-white px-2 py-1 text-sm rounded">
+          About us
+        </button></a>
         <div className="w-8 h-8 text-white">
-          <BiMenu className="w-full h-full" />
-        </div>
+            <BsFillPersonFill className="w-full h-full" />
+          </div>
       </div>
     </div>
   </>)

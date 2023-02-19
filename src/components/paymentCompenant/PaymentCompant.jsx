@@ -1,6 +1,7 @@
 import React from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment } from "react";
+import logon from './logo.png'
 
 const PaymentModel = ({ setIsOpen, isOpen, price }) => {
   const closeModal = () => {
@@ -12,10 +13,10 @@ const PaymentModel = ({ setIsOpen, isOpen, price }) => {
       key: "rzp_test_wClumxtf5mJCsz",
       amount: price * 100,
       currency: "INR",
-      name: "Book My Show Clone",
+      name: "Cinametic",
       description: "Movie purchase or rental",
-      image:
-        "https://i.ibb.co/zPBYW3H/imgbin-bookmyshow-office-android-ticket-png.png",
+      image:{logon},
+        //"https://i.ibb.co/zPBYW3H/imgbin-bookmyshow-office-android-ticket-png.png",
       handler: () => {
         setIsOpen(false);
         alert("Payment Successful");
