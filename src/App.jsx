@@ -4,7 +4,7 @@ import Homepage from './pages/Homepage';
 import Moviepage from './pages/Moviepage';
 import axios from 'axios';
 import Playspage from './pages/Playspage';
-// import login from './pages/login';
+
 
 axios.defaults.baseURL = "https://api.themoviedb.org/3";
 axios.defaults.params = {};
